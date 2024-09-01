@@ -2,24 +2,33 @@ body {
     font-family: 'Arial', sans-serif;
     background-color: #E6F7FF;
     margin: 0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
     height: 100vh;
+    overflow: hidden;
 }
 
 .message-container {
     text-align: center;
-    margin-bottom: 20px;
+    position: relative;
+    top: 15vh;
+    left: 1vw;
+}
+
+.message-container p {
+    font-size: 22px;
 }
 
 .container {
     background-color: #FAFAFA;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    overflow: hidden;
-    width: 300px;
+    width: 350px;
     transition: box-shadow 0.3s ease-in-out;
+    position: relative;
+    top: 15vh;
+    left: 39vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .container:hover {
@@ -33,10 +42,6 @@ body {
     align-items: center;
 }
 
-.form-container form {
-    width: 100%;
-}
-
 .form-container h2 {
     color: #004080;
     margin-bottom: 20px;
@@ -44,6 +49,7 @@ body {
 
 .form-container label {
     display: block;
+    font-weight: 600;
     margin-bottom: 8px;
     color: #555;
 }
@@ -52,7 +58,7 @@ body {
     padding: 10px;
     margin-bottom: 16px;
     border: 1px solid #ddd;
-    border-radius: 4px;
+    border-radius: 14px;
     width: 100%;
     box-sizing: border-box;
     transition: border-color 0.3s ease-in-out;
@@ -78,14 +84,14 @@ body {
 
 .popup-container {
     display: none;
+    justify-content: center;
+    align-items: center;
     position: fixed;
-    top: 0;
+    bottom: 0;
     left: 0;
     width: 100%;
     height: 100%;
     background: #F6F7B5;
-    align-items: center;
-    justify-content: center;
     z-index: 1000;
 }
 
@@ -103,6 +109,8 @@ body {
     top: 10px;
     right: 10px;
     cursor: pointer;
+    font-weight: 900;
+    font-size: 25px;
 }
 
 .success-message {
@@ -114,8 +122,9 @@ body {
 
 .signup-message {
     color: #004080;
-    font-size: 18px;
+    font-size: 22px;
     font-weight: bold;
+    display: flex;
 }
 
 .welcome-message {
@@ -136,10 +145,8 @@ body {
     padding: 20px;
 }
 
-.DND:hover{
-    cursor: pointer;
-}
-
 .NDN:hover {
     cursor: pointer;
+    text-decoration: underline;
+    text-underline-offset: 4px;
 }

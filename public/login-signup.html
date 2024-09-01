@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="logsin.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
     <title>CarbonTrace | Login/Signup</title>
 </head>
 <body>
@@ -15,37 +16,63 @@
         <div class="form-container">
             <h2>Login</h2>
             <form id="login-form">
-                <label for="login-email">Email:</label>
-                <input type="email" id="login-email" required>
-                <label for="login-password">Password:</label>
-                <input type="password" id="login-password" required>
+                <div class="user">
+                    <label for="login-email">Email:
+                        <input type="email" id="login-email" placeholder="kk@gmail.com" required>
+                        <i class="fa-regular fa-user"></i>
+                     </label>
+                </div>
+
+                <div class="pass">
+                    <label for="login-password">Password:</label>
+                    <input type="password" id="login-password" placeholder=".........." required>
+                </div>
+
                 <button type="button" onclick="login()">Login</button>
+
                 <p onclick="showSignup()">Don't have an account? <span class="NDN">Sign Up</span></p>
+
                 <div class="success-message" id="login-success"></div>
             </form>
         </div>
     </div>
 
-    <div class="popup-container" id="signup-popup">
-        <p class="signup-message">Join us! Create an account to get started.</p>
+    <!-- <p class="signup-message">Join us! Create an account to get started.</p> -->
+
+    <div class="popup-container popup-content" id="signup-popup">
         <div class="popup-content">
-            <span class="close-btn" onclick="closeSignup()">X</span>
+                <span class="close-btn" onclick="closeSignup()">x</span>
             <div class="form-container">
                 <h2>Sign Up</h2>
                 <form id="signup-form">
-                    <label for="signup-name">Name:</label>
-                    <input type="text" id="signup-name" required>
-                    <label for="signup-email">Email:</label>
-                    <input type="email" id="signup-email" required>
-                    <label for="signup-password">Password:</label>
-                    <input type="password" id="signup-password" required>
+                    <div class="name user">
+                        <label for="signup-name">Name:
+                            <input type="text" id="signup-name" placeholder="Kumar Kaushik" required>
+                        </label>
+                    </div>
+
+                    <div class="user">
+                        <label for="signup-email">Email:
+                            <input type="email" id="signup-email" placeholder="kk@gmail.com" required>
+                        </label>
+                    </div>
+
+                    <div class="pass">
+                        <label for="signup-password">Password:
+                            <input type="password" id="signup-password" placeholder=".........." required>
+                        </label>
+                    </div>
+
                     <button type="button" onclick="signup()">Sign Up</button>
-                    <p onclick="showLogin()">Already have an account? <span class="DND">Login</span></p>
+
+                    <p onclick="showLogin()">Already have an account? <span class="NDN">Login</span></p>
+
                     <div class="success-message" id="signup-success"></div>
                 </form>
             </div>
         </div>
     </div>
+    
 
     <script src="logsin.js"></script>
 </body>
