@@ -4,45 +4,76 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="cc.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>Carbon Trace | Carbon Calculator</title>
 </head>
 <body>
+    <section class="tat-oly">
+    <h2>Carbon Calculator</h2>
     <main>
-        <div class="bg-screen">
-            <form action="">
-                <label for="energy-consumption">Energy Consumed :
-                    <input type="number" name="energy-consumed" id="aoec" placeholder="in Kwh...">
-                </label>
+        <div class="bg-screen ccjo">
+            <form id="carbonForm" action="/carbon/submit" method="post">
+                <div class="set1">
+                <div class="input engy">
+                    <label for="energy-consumption">Energy Consumed :
+                        <input type="number" name="energy-consumed" id="aoec" placeholder="in Kwh..." required>
+                    </label>
+                </div>
 
-                <label for="fuel-consumption">Fuel Usage :
-                    <input type="number" name="fuel-usage" id="Fu"n placeholder="in L(liter)">
-                </label>
+                <div class="input ful-con">
+                    <label for="fuel-consumption">Fuel Usage :
+                        <input type="number" name="fuel-usage" id="Fu" placeholder="in L(liter)" required>
+                    </label>
+                </div>
 
-                <label for="waste-produce">Waste Production :
-                    <input type="number" name="waste" id="watpro" placeholder="in Kg">
-                </label>
+                <div class="input was-pro">
+                    <label for="waste-produce">Waste Production :
+                        <input type="number" name="waste" id="watpro" placeholder="in Kg" required>
+                    </label>
+                </div>
 
-                <label for="extraction-rate">Coal Extraction Rate :
-                    <input type="number" name="waste" id="watpro" placeholder="in tons">
-                </label>
+                <div class="input ext-rat">
+                    <label for="extraction-rate">Coal Extraction Rate :
+                        <input type="number" name="waste" id="watpro" placeholder="in tons" required>
+                    </label>
+                </div>
 
-                <label for="water-consumption">Water Consumption :
-                    <input type="number" name="water" id="watpro" placeholder="in L(liter)">
-                </label>
+                <div class="input wat-consp">
+                    <label for="water-consumption">Water Consumption :
+                        <input type="number" name="water" id="watpro" placeholder="in L(liter)" required>
+                    </label>
+                </div>
+            </div>
 
-                <label for="ch4-emission">Methane Emission :
-                    <input type="number" name="chEmission" id="ch-emi" placeholder="in Kg">
-                </label>
+            <div class="set2">
+                <div class="input ch-sion">
+                    <label for="ch4-emission">Methane Emission :
+                        <input type="number" name="chEmission" id="ch-emi" placeholder="in Kg" required>
+                    </label>
+                </div>
 
-                <label for="transport-emission">Transport Emission :
-                    <input type="number" name="transport" id="trans-emi" placeholder="in">
-                </label>
+                <div class="input tan-em">
+                    <label for="transport-emission">Transport Emission :
+                        <input type="number" name="transport" id="trans-emi" placeholder="in" required>
+                    </label>
+                </div>
 
-                <label for="explosive">Explosive :
-                    <input type="number" name="explosion" id="explo-boom" placeholder="in">
-                </label>
+                <div class="input boomsec">
+                    <label for="explosive">Explosive :
+                        <input type="number" name="explosion" id="explo-boom" placeholder="in" required>
+                    </label>
+                </div>
+
+                <div class="btn-sub">
+                    <button onclick="ccData()">Submit</button>
+                </div>
+            </div>
             </form>
         </div>
     </main>
+</section>
+<div class="rtrn-home"><a href="./index.html"><i class="fa-solid fa-backward"></i></a></div>
+
+<script src="cc.js"></script>
 </body>
 </html>
