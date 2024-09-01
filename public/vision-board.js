@@ -2,7 +2,6 @@ document.addEventListener('DOMContentLoaded', function() {
     const addGoalButton = document.querySelector('.add-goal-button');
     const goalsContainer = document.querySelector('.goals-container');
 
-    // Function to create a new goal card
     function createGoalCard(title, target, progress) {
         const goalCard = document.createElement('div');
         goalCard.className = 'goal-card';
@@ -31,7 +30,6 @@ document.addEventListener('DOMContentLoaded', function() {
         goalsContainer.appendChild(goalCard);
     }
 
-    // Add a new goal when the button is clicked
     addGoalButton.addEventListener('click', function() {
         const newTitle = 'New Goal';
         const newTarget = 'Target: Set your goal';
@@ -40,7 +38,6 @@ document.addEventListener('DOMContentLoaded', function() {
         createGoalCard(newTitle, newTarget, newProgress);
     });
 
-    // Attach event listeners to the existing edit buttons
     const editButtons = document.querySelectorAll('.edit-goal-button');
     editButtons.forEach(button => {
         button.addEventListener('click', function() {
