@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="vision-board.css">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <title>CarbonTrace | Vision Board</title>
+</head>
+<body>
+    <header>
+        <div class="logo1">
+            <img src="../assets/logo1.png" alt="Logo">
+        </div>                                     
+        <nav>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="cc.html">Carbon Calculator</a></li>
+            <li><a href="vision-board.html">Vision Board</a></li>
+            <li><a href="#">Report</a></li>
+            <li><a href="#">Smart Suggestion</a></li>
+            <li><a href="#">Login/Signup</a></li>
+        </nav>
+    </header>
+
+    <div class="sep"></div>
+
+    <section id="vision-board" class="vision-board">
+        <h2>Vision Board</h2>
+        <div class="goals-container">
+            <div class="goal-card">
+                <h3 contenteditable="true">Reduce Carbon Emissions</h3>
+                <p contenteditable="true">Target: 10% reduction by end of the year</p>
+                <progress value="40" max="100"></progress>
+                <button class="edit-goal-button">Edit</button>
+            </div>
+            <div class="goal-card">
+                <h3 contenteditable="true">Improve Energy Efficiency</h3>
+                <p contenteditable="true">Target: 15% improvement in energy usage</p>
+                <progress value="60" max="100"></progress>
+                <button class="edit-goal-button">Edit</button>
+            </div>
+            <div class="goal-card">
+                <h3 contenteditable="true">Waste Reduction</h3>
+                <p contenteditable="true">Target: 25% reduction in waste production</p>
+                <progress value="25" max="100"></progress>
+                <button class="edit-goal-button">Edit</button>
+            </div>
+        </div>
+        <button class="add-goal-button">Add New Goal</button>
+    </section>
+
+    <script src="vision-board.js"></script>
+</body>
+</html>

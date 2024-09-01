@@ -1,0 +1,132 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+header {
+    background-color: #007b5e;
+    padding: 10px;
+    text-align: center;
+}
+
+header .logo1 img {
+    width: 150px;
+}
+
+nav {
+    margin: 20px 0;
+}
+
+nav li {
+    display: inline;
+    margin: 0 15px;
+    list-style: none;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+/* Vision Board Section */
+.vision-board {
+    padding: 50px;
+    background-color: #f4f4f4;
+}
+
+.vision-board h2 {
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 2em;
+    color: #333;
+}
+
+.goals-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.goal-card {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    margin: 10px;
+    width: 300px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.goal-card h3 {
+    margin-bottom: 15px;
+    font-size: 1.5em;
+    color: #007b5e;
+}
+
+.goal-card p {
+    margin-bottom: 10px;
+    color: #555;
+}
+
+.goal-card progress {
+    width: 100%;
+    height: 20px;
+}
+
+.add-goal-button {
+    display: block;
+    margin: 30px auto;
+    padding: 10px 20px;
+    font-size: 1em;
+    background-color: #007b5e;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.add-goal-button:hover {
+    background-color: #005f46;
+}
+/* Styles for editable fields */
+.goal-card [contenteditable="true"] {
+    border: 1px dashed #007b5e;
+    padding: 5px;
+    border-radius: 3px;
+}
+
+/* Styles for buttons */
+.edit-goal-button {
+    margin-top: 10px;
+    padding: 5px 10px;
+    background-color: #007b5e;
+    color: white;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.edit-goal-button:hover {
+    background-color: #005f46;
+}
+
+.add-goal-button {
+    display: block;
+    margin: 30px auto;
+    padding: 10px 20px;
+    font-size: 1em;
+    background-color: #007b5e;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.add-goal-button:hover {
+    background-color: #005f46;
+}
