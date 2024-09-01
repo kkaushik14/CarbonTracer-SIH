@@ -3,5 +3,5 @@ function openCCPage() {
 }
 
 function openVb() {
-    window.open('VB.html', '_blank');
+    window.open('vision-board.html', '_blank');
 }
