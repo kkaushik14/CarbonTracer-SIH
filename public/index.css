@@ -49,3 +49,58 @@ header nav li a:hover {
 header .logo1 img {
     width: 20vw;
 }
+
+main .tagL p {
+    font-size: 33.25px;
+    font-weight: 300;
+    line-height: 46.75px;
+    position: relative;
+    top: 50px;
+    left: 12vw;
+}
+
+main .tagL {
+    width: 80vw;
+    height: 45vh;
+}
+
+main .underline {
+    text-decoration: underline #2251FF 2px;
+    text-underline-offset: 10px;
+}
+
+main .underline:hover {
+    background-color: #2251FF;
+    color: #fff;
+    transition: all ease-in-out 0.6s;
+    /* padding: 4px; */
+}
+
+.sep2 {
+    background-color: #c6c6c66b;
+    padding: 3px;
+    width: 85vw;
+    position: relative;
+    left: 7vw;
+}
+
+main .hwy p {
+    font-size: 19.125px;
+    line-height: 29.75px;
+    font-weight: 300;
+    position: relative;
+    top: 50px;
+    left: 12vw;
+}
+
+main .hwy {
+    width: 80vw;
+    height: 43vh;
+}
+
+main .hwy .hok {
+    font-size: 17px;
+    font-weight: 700;
+    line-height: 25.5px;
+    padding: 15px 0;
+}
